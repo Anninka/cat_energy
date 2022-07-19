@@ -1,0 +1,46 @@
+
+.example {
+  background-color: $grey-8;
+}
+
+.example__title {
+  font-family: Oswald, Arial, sans-serif;
+  color: $black;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__text {
+  font-family: Arial, sans-serif;
+  color: $grey-73;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.example__number {
+  font-family: Oswald, Arial, sans-serif;
+  text-transform: uppercase;
+  color: $black;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.example__description {
+  font-family: Arial, sans-serif;
+  color: $grey-73;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+}
+
+.example__spent {
+  font-family: Oswald, Arial, sans-serif;
+  text-transform: uppercase;
+  color: $black;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}

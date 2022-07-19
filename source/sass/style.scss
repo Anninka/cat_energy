@@ -1,10 +1,14 @@
 // Global
 
-@import "global/variables.scss";
-@import "global/global.scss";
-@import "global/fonts.scss";
+@import "global/variables.scss",
+"global/global.scss",
+"global/fonts.scss";
 
 // Blocks
 
-@import "blocks/main-nav.scss";
-@import "blocks/promo.scss"
+@import "blocks/main-nav.scss",
+"blocks/promo.scss",
+"blocks/programs.scss",
+"blocks/advantages.scss",
+"blocks/example.scss",
+"blocks/page-footer.scss";
