@@ -39,78 +39,78 @@
       <section class="program-selection">
         <div class="program-selection__wrapper">
           <h1 class="program-selection__title">Подбор программы</h1>
-          <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program-selection__form">
-            <fieldset class="program-selection__box">
+            <fieldset class="program-selection__box cat-info">
               <p>
-                <label for="name">Имя:*</label>
-                <input class="" id="name" type="text" name="name" placeholder="Барсик">
+                <label class="cat-info__label" for="name">Имя:*</label>
+                <input class="cat-info__input" id="name" type="text" name="name" placeholder="Барсик">
               </p>
               <p>
-                <label for="weight">Вес (кг):*</label>
-                <input class="" id="weight" type="text" name="weight" placeholder="7">
+                <label class="cat-info__label" for="weight">Вес (кг):*</label>
+                <input class="cat-info__input" id="weight" type="text" name="weight" placeholder="7">
               </p>
               <p>
-                <label for="age">Возраст (лет):</label>
-                <input class="" id="age" type="text" name="age" placeholder="7">
+                <label class="cat-info__label" for="age">Возраст (лет):</label>
+                <input class="cat-info__input" id="age" type="text" name="age" placeholder="7">
               </p>
             </fieldset>
-            <fieldset class="program-selection__box">
-              <ul class="program-selection__list">
-                <li class="program-selection__item">
+            <fieldset class="program-selection__box cat-goal">
+              <ul class="cat-goal__list">
+                <li class="cat-goal__item">
                   <input class="visually-hidden" type="radio" name="purpose" value="slim" id="slim" checked>
-                  <label class="program-selection__purpose" for="slim">Похудение</label>
+                  <label class="cat-goal__label" for="slim">Похудение</label>
                 </li>
                 <li class="program-selection__item">
                   <input class="visually-hidden" type="radio" name="purpose" value="pro" id="pro">
-                  <label class="program-selection__purpose" for="pro">Набор массы</label>
+                  <label class="cat-goal__label" for="pro">Набор массы</label>
                 </li>
                 <li class="program-selection__item">
                   <input class="visually-hidden" type="radio" name="purpose" value="dont-know" id="dont-know">
-                  <label class="program-selection__purpose" for="dont-know">Не знаю (нужен ваш совет)</label>
+                  <label class="cat-goal__label" for="dont-know">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="program-selection__box">
-              <h2>Контактные данные (владельца кота)</h2>
+            <fieldset class="program-selection__box cat-contacts">
+              <h2 class="cat-contacts__title">Контактные данные (владельца кота)</h2>
               <p>
-                <label for="email">e-mail:*</label>
-                <input class="" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
+                <label class="cat-contacts_label" for="email">e-mail:*</label>
+                <input class="cat-contacts__input" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
               </p>
               <p>
-                <label for="phone">Телефон:*</label>
-                <input class="" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+                <label class="cat-contacts_label" for="phone">Телефон:*</label>
+                <input class="cat-contacts__input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
               </p>
             </fieldset>
-            <fieldset class="program-selection__box">
-              <h2>Комментарий</h2>
-              <p class="modal-text">
-                <textarea class="" id="text" name="comment" rows="5" cols="83" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <fieldset class="program-selection__box cat-comment">
+              <h2 class="cat-comment__title">Комментарий</h2>
+              <p>
+                <textarea class="cat-comment__area" id="text" name="comment" rows="5" cols="83" placeholder="Расскажите обо всех повадках кота"></textarea>
               </p>
             </fieldset>
-            <fieldset class="program-selection__box">
-              <h2>Дополнительно</h2>
-              <ul>
-                <li class="">
+            <fieldset class="program-selection__box additional-to-nutrition">
+              <h2 class="additional-to-nutrition__title">Дополнительно</h2>
+              <ul class="additional-to-nutrition__list">
+                <li class="additional-to-nutrition__item">
                   <input class="visually-hidden" type="checkbox" name="other" id="" cheked>
-                  <label class="" for="">Сахарозаменитель</label>
+                  <label class="additional-to-nutrition__label" for="">Сахарозаменитель</label>
                 </li>
-                <li class="">
+                <li class="additional-to-nutrition__item">
                   <input class="visually-hidden" type="checkbox" name="other" id="" cheked>
-                  <label class="" for="">Питьевая вода</label>
+                  <label class="additional-to-nutrition__label" for="">Питьевая вода</label>
                 </li>
-                <li class="">
+                <li class="additional-to-nutrition__item">
                   <input class="visually-hidden" type="checkbox" name="other" id="" cheked>
-                  <label class="" for="">Молоко</label>
+                  <label class="additional-to-nutrition__label" for="">Молоко</label>
                 </li>
-                <li class="">
+                <li class="additional-to-nutrition__item">
                   <input class="visually-hidden" type="checkbox" name="other" id="" cheked>
-                  <label class="" for="">Витамины</label>
+                  <label class="additional-to-nutrition__label" for="">Витамины</label>
                 </li>
               </ul>
             </fieldset>
-            <button class="">Отправить заявку</button>
-            <p>* — Обязательные поля</p>
+            <button class="program-selection__button">Отправить заявку</button>
+            <p class="program-selection__note">* — Обязательные поля</p>
           </form>
         </div>
       </section>
