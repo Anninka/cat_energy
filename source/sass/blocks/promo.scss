@@ -6,16 +6,33 @@
   font-weight: 400;
 }
 
+.promo__wrapper {
+  text-align: center;
+}
+
 .promo__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
 }
 
 .promo__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+  }
 }
 
 .promo__link {
@@ -23,4 +40,14 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  height: 40px;
+  background-color: aqua;
+  display: block;
+  margin: 0 20px;
+  padding-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

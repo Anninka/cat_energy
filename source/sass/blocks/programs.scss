@@ -1,10 +1,13 @@
 
 .programs__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .programs__item {
   background-color: $grey-5;
+  margin: 0 20px;
 }
 
 .programs-title {
@@ -14,6 +17,11 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs-text {
@@ -22,6 +30,12 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+  }
 }
 
 .programs-link {
@@ -31,4 +45,9 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
