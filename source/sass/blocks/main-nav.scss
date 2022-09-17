@@ -12,13 +12,13 @@
 .main-nav__container {
   display: flex;
   justify-content: space-between;
-  padding: 11px 20px 17px;
   align-items: center;
+  padding: 11px 20px 17px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
-    padding: 24px 30px 60px;
     box-sizing: content-box;
+    padding: 24px 30px 0;
   }
 }
 
@@ -31,11 +31,13 @@
 .main-nav__link--active::before {
   @media (min-width: $tablet-width) {
     position: absolute;
+    bottom: 10px;
+
     width: 100%;
     height: 2px;
+
     background-color: $green;
     content: "";
-    bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,11 +46,12 @@
 }
 
 .main-nav--closed .main-nav__toggle {  //стили кнопки-бургера при закрытом меню
-  border: none;
-  background-image: url(../../img/Logo_menu_closed.svg);
-  background-color: $white;
   width: 24px;
   height: 18px;
+
+  background-color: $white;
+  background-image: url(../../img/Logo_menu_closed.svg);
+  border: none;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -57,12 +60,13 @@
 }
 
 .main-nav--opened .main-nav__toggle {  //стили кнопки закрытия при открытом меню
-  border: none;
-  background-image: url(../../img/logo_menu_opened.svg);
-  background-color: $white;
   width: 18px;
   height: 20px;
   margin: 3px;
+
+  background-color: $white;
+  background-image: url(../../img/logo_menu_opened.svg);
+  border: none;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -72,7 +76,7 @@
 
 .main-nav__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 24px 30px 60px;
+    padding: 24px 30px 0;
   }
 }
 
@@ -81,12 +85,11 @@
 }
 
 .main-nav__list {
-  list-style: none;
-  left: 0;
-  right: 0;
-  background-color: $white;
   padding: 0;
   margin: 0;
+
+  background-color: $white;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -105,7 +108,7 @@
 
   .main-nav--closed .main-nav__wrapper,
   .main-nav--nojs .main-nav__toggle {
-  display: none;
+    display: none;
   }
 
   .main-nav--opened .main-nav__wrapper,
@@ -129,15 +132,16 @@
 }
 
 .main-nav__link {
+  display: block;
+  padding: 22px 0;
+
   font-family: Oswald, Arial, sans-serif;
-  text-transform: uppercase;
-  color: $black;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
-  padding: 22px 0;
-  display: block;
+  text-transform: uppercase;
   text-align: center;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

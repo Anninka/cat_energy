@@ -1,14 +1,14 @@
 
 .cat-goal__list {
-  list-style: none;
   margin: 0;
+  list-style: none;
 }
 
 .cat-goal__label {
   font-family: Oswald, Arial, sans-serif;
-  color: $grey-87;
-  text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  text-transform: uppercase;
+  color: $grey-87;
 }

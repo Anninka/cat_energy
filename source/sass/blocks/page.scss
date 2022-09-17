@@ -1,16 +1,15 @@
 
 .page {
   height: 100%;
-  font-size: 16px;
   font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
   line-height: 20px;
 }
 
 .page__body {
   min-height: 100%;
-  // min-width: 280px;
-  margin: 0 auto;
-  background-color: $white;
-  color: $black;
   box-sizing: border-box;
+  margin: 0 auto;
+  color: $black;
+  background-color: $white;
 }
