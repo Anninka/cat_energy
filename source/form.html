@@ -7,17 +7,18 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="196" height="38" alt="Магазин «Cat Energy»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__container">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-cat" src="img/logo-mobile.svg" width="33" height="38" alt="Магазин «Cat Energy»">
+          </a>
+          <img class="main-nav__logo-cat-energy" src="img/logo_cat-energy.svg" width="101" height="18" alt="Магазин «Cat Energy»">
+          <button class="main-nav__toggle"></button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="index.html">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="index.html">
                 Главная
               </a>
             </li>
@@ -26,7 +27,7 @@
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__link" class="main-nav__item">
+            <li class="main-nav__item">
               <a class="main-nav__link">
                 Подбор программы
               </a>
@@ -119,7 +120,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__offer">Приглашаем к сотрудничеству дилеров!</div>
         <div class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
-        <img class="page-footer__logo" src="img/footer-logo 2.svg" width="128" height="24" alt="Логотип Cat Energy">
+        <img class="page-footer__logo" src="img/footer-logo2.svg" width="128" height="24" alt="Логотип Cat Energy">
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -138,6 +139,6 @@
         <img class="" src="img/logo_html.svg" width="281" height="34" alt="Логотип HTML-академии">
       </a>
     </footer>
-
+    <script src="js/burger-menu.js"></script>
   </body>
 </html>

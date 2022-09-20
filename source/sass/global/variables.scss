@@ -24,3 +24,10 @@ $grey-93: #111111;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
+
+//Mixins
+
+@mixin list () {
+  margin: 0;
+  list-style: none;
+}

@@ -1,6 +1,7 @@
 
 .promo {
   position: relative;
+
   font-family: Oswald, Arial, sans-serif;
   font-weight: 400;
   color: $white;
@@ -16,16 +17,41 @@
   background: linear-gradient(to top, $green-opacity, $green-opacity), url(../../img/background-cat-mobile.jpg);
   background-color: $green;
   background-size: cover;
+  background-repeat: no-repeat;
+
   content: "";
 
   @media (min-width: $tablet-width) {
     background: none;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -121px;
+    right: 0;
+    width: 50%;
+    height: 696px;
+
+    background: linear-gradient(to top, $green-opacity, $green-opacity), url(../../img/background-cat-desktop.jpg);
+    background-color: $green;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .promo__wrapper {
-  padding: 37px 30px 0;
+  position: relative;
+  padding: 37px 20px 0px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 67px 110px 280px;
+  }
 }
 
 .promo__title {
@@ -52,6 +78,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-top: 9px;
     padding-left: 88px;
     font-size: 20px;
     line-height: 20px;
@@ -60,11 +87,27 @@
   }
 }
 
+.promo__image {
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 200px;
+    right: 400px;
+    z-index: -1;
+
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 100px;
+    left: 700px;
+  }
+}
+
 .promo__link {
   display: block;
 
   height: 40px;
-  margin: 0 20px;
   padding-top: 11px;
 
   font-size: 14px;
@@ -74,17 +117,23 @@
 
   background-color: $green;
 
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: $white-opacity;
+    background-color: $dark-green;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 244px;
+    height: 54px;
+    margin-top: 21px;
+    margin-left: 82px;
+    padding-top: 17px;
+
     font-size: 20px;
     line-height: 20px;
   }
-}
-
-.promo__link:hover {
-  background-color: $dark-green;
-}
-
-.promo__link:active {
-  color: $white-opacity;
-  background-color: $dark-green;
 }
