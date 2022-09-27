@@ -26,29 +26,6 @@
   }
 }
 
-.main-nav__link--active {
-  @media (min-width: $tablet-width) {
-    position: relative;
-  }
-}
-
-.main-nav__link--active::before {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 10px;
-
-    width: 100%;
-    height: 2px;
-
-    background-color: $green;
-    content: "";
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $white;
-  }
-}
-
 .main-nav--closed .main-nav__toggle {  //стили кнопки-бургера при закрытом меню
   width: 24px;
   height: 18px;
@@ -123,6 +100,12 @@
 }
 
 .main-nav__item {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     padding-right: 34px;
@@ -139,16 +122,37 @@
 .main-nav__link {
   display: block;
   padding: 22px 0;
-
-  font-family: Oswald, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
   color: $black;
 
   @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $white;
+  }
+}
+
+.main-nav__link--active {
+  display: block;
+  padding: 22px 0;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -159,6 +163,23 @@
     line-height: 30px;
     font-weight: 400;
     color: $white;
+  }
+}
+
+.main-nav__link--active::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 10px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $green;
+    content: "";
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
   }
 }
 

@@ -105,8 +105,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 200px;
-    right: 400px;
+    top: 250px;
+    right: 30px;
     z-index: -1;
 
     width: 709px;
@@ -115,8 +115,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 100px;
-    left: 700px;
+    top: 10px;
+    left: 550px;
+
+    width: 552px;
+    height: 499px;
   }
 }
 
