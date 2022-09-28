@@ -1,9 +1,13 @@
 
-.example {
+.example__wrapper {
+  padding: 27px 20px 31px;
   background-color: $grey-8;
 }
 
 .example__title {
+  margin: 0;
+  margin-bottom: 33px;
+
   font-family: Oswald, Arial, sans-serif;
   font-size: 36px;
   line-height: 40px;
@@ -12,6 +16,9 @@
 }
 
 .example__text {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -19,13 +26,27 @@
   color: $grey-73;
 }
 
+.example__list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
 .example__number {
+  width: 124px;
+  height: 64px;
+  padding-top: 18px;
+
   font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
   color: $black;
+
+  border: 1px solid $grey-20;
+  border-radius: 3px;
 }
 
 .example__description {
@@ -37,10 +58,17 @@
 }
 
 .example__spent {
+  margin-bottom: 42px;
+
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
   color: $black;
+}
+
+.example__image {
+  margin-bottom: 27px;
 }

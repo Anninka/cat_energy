@@ -29,5 +29,6 @@ $mobile-width-only: 767px;
 
 @mixin list () {
   margin: 0;
+  padding: 0;
   list-style: none;
 }

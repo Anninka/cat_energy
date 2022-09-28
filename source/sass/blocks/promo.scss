@@ -136,15 +136,6 @@
 
   background-color: $green;
 
-  &:hover {
-    background-color: $dark-green;
-  }
-
-  &:active {
-    color: $white-opacity;
-    background-color: $dark-green;
-  }
-
   @media (min-width: $tablet-width) {
     width: 244px;
     height: 54px;
@@ -154,5 +145,14 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &:hover {
+      background-color: $dark-green;
+    }
+
+    &:active {
+      color: $white-opacity;
+      background-color: $dark-green;
+    }
   }
 }
