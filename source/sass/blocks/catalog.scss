@@ -1,4 +1,25 @@
 
+.catalog__title {
+  margin: 0;
+  padding: 27px 20px 41px;
+
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $black;
+
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $grey-15;
+    border-bottom: 1px solid $grey-15;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .catalog__more-title {
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
@@ -6,6 +27,11 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $grey-93;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .catalog__more-text {
@@ -14,6 +40,11 @@
   line-height: 16px;
   font-weight: 400;
   color: $grey-73;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .catalog__more-button {
@@ -26,4 +57,8 @@
 
   background-color: $grey-5;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    line-height: 0;
+  }
 }
