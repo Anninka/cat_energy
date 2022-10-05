@@ -15,7 +15,17 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 64px 30px 53px;
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+.catalog__basic-goods {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 140px 60px;
+    padding: 100px 30px 68px;
   }
 }
