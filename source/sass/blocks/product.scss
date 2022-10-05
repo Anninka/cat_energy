@@ -31,8 +31,12 @@
   display: block;
   width: fit-content;
   height: fit-content;
-  margin: -124px auto 0;
+  margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -124px;
+  }
 }
 
 .product__image {
