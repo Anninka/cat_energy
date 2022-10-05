@@ -84,10 +84,6 @@
     border-top: 1px solid $grey-10;
   }
 
-  .main-nav__item:last-child {
-    border-bottom: 1px solid $grey-10;
-  }
-
   .main-nav--closed .main-nav__wrapper,
   .main-nav--nojs .main-nav__toggle {
     display: none;
