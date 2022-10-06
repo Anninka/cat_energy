@@ -19,13 +19,24 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 53px;
+  }
 }
 
 .catalog__basic-goods {
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 140px 60px;
     padding: 100px 30px 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 144px 80px;
+    padding: 112px 110px 76px;
   }
 }
