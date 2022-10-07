@@ -33,3 +33,10 @@ $mobile-width-only: 767px;
   padding: 0;
   list-style: none;
 }
+
+@mixin background () {
+  background-color: $green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 60%;
+}

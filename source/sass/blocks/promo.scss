@@ -15,17 +15,13 @@
   height: 302px;
 
   background: linear-gradient(to top, $green-opacity, $green-opacity), url(../../img/index-bgheader-mobile.jpg);
-  background-color: $green;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include background ();
 
   content: "";
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(to top, $green-opacity, $green-opacity), url(../../img/index-bgheader-mobile@2x.jpg);
-    background-color: $green;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include background ();
   }
 
   @media (min-width: $tablet-width) {
@@ -39,15 +35,11 @@
     height: 696px;
 
     background: linear-gradient(to top, $green-opacity, $green-opacity), url(../../img/index-bgheader-desktop.jpg);
-    background-color: $green;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include background ();
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(to top, $green-opacity, $green-opacity), url(../../img/index-bgheader-desktop@2x.jpg);
-      background-color: $green;
-      background-size: cover;
-      background-repeat: no-repeat;
+      @include background ();
     }
   }
 }
@@ -124,17 +116,11 @@
 }
 
 .promo__link {
-  display: block;
-
   height: 40px;
   padding-top: 11px;
 
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
-  color: $white;
-
-  background-color: $green;
 
   @media (min-width: $tablet-width) {
     width: 244px;
@@ -145,14 +131,5 @@
 
     font-size: 20px;
     line-height: 20px;
-
-    &:hover {
-      background-color: $dark-green;
-    }
-
-    &:active {
-      color: $white-opacity;
-      background-color: $dark-green;
-    }
   }
 }
