@@ -1,0 +1,131 @@
+
+.advantages__wrapper {
+  padding: 14px 20px 42px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 30px 47px;
+    border-bottom: 1px solid $grey-10;
+  }
+
+  @media (min-width: $desktop-width) {
+  padding: 71px 110px 10px;
+  border: none;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 38px;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.advantages__list {
+  @include list ();
+  counter-reset: advantages;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 136px;
+    margin-right: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    margin: 0;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    margin-bottom: 0;
+    height: 280px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin: 40px 0 31px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+
+      font-family: Oswald, Arial, sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      color: $grey-5;
+
+      counter-increment: advantages;
+      content: counter(advantages);
+    }
+  }
+}
+
+.advantages__item--leaf::before {
+  background-image: url(../../img/icon_leaf.svg);
+}
+
+.advantages__item--tub::before {
+  background-image: url(../../img/icon_tub.svg);
+}
+
+.advantages__item--eat::before {
+  background-image: url(../../img/icon_eat.svg);
+}
+
+.advantages__item--alarm::before {
+  background-image: url(../../img/icon_alarm.svg);
+}
+
+.advantages__text {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $grey-73;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
