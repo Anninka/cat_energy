@@ -5,6 +5,11 @@
   line-height: 26px;
   font-weight: 400;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .cat-comment__area {
@@ -14,4 +19,9 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $grey-73;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

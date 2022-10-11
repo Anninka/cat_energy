@@ -5,6 +5,11 @@
   line-height: 26px;
   font-weight: 400;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additional-to-nutrition__list {
@@ -19,4 +24,9 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

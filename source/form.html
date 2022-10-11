@@ -46,7 +46,7 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link--active">
+              <a class="main-nav__link--active" aria-current="page">
                 Подбор программы
               </a>
             </li>
@@ -57,39 +57,43 @@
     <main class="page-main">
       <section class="program-selection">
         <div class="program-selection__wrapper">
-          <h1 class="program-selection__title">Подбор программы</h1>
-          <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <div class="program-selection__paragraf-wrapper">
+            <h1 class="program-selection__title">Подбор программы</h1>
+            <p class="program-selection__text">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
+          </div>
           <form class="program-selection__form">
-            <fieldset class="program-selection__box cat-info">
-              <p>
-                <label class="cat-info__label" for="name">Имя:*</label>
-                <input class="cat-info__input" id="name" type="text" name="name" placeholder="Барсик">
-              </p>
-              <p>
-                <label class="cat-info__label" for="weight">Вес (кг):*</label>
-                <input class="cat-info__input" id="weight" type="text" name="weight" placeholder="7">
-              </p>
-              <p>
-                <label class="cat-info__label" for="age">Возраст (лет):</label>
-                <input class="cat-info__input" id="age" type="text" name="age" placeholder="7">
-              </p>
-            </fieldset>
-            <fieldset class="program-selection__box cat-goal">
-              <ul class="cat-goal__list">
-                <li class="cat-goal__item">
-                  <input class="visually-hidden" type="radio" name="purpose" value="slim" id="slim" checked>
-                  <label class="cat-goal__label" for="slim">Похудение</label>
-                </li>
-                <li class="program-selection__item">
-                  <input class="visually-hidden" type="radio" name="purpose" value="pro" id="pro">
-                  <label class="cat-goal__label" for="pro">Набор массы</label>
-                </li>
-                <li class="program-selection__item">
-                  <input class="visually-hidden" type="radio" name="purpose" value="dont-know" id="dont-know">
-                  <label class="cat-goal__label" for="dont-know">Не знаю (нужен ваш совет)</label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="program-selection__container">
+              <fieldset class="program-selection__box cat-info">
+                <p class="cat-info__paragraf">
+                  <label class="cat-info__label" for="name">Имя:*</label>
+                  <input class="cat-info__input" id="name" type="text" name="name" placeholder="Барсик">
+                </p>
+                <p class="cat-info__paragraf">
+                  <label class="cat-info__label" for="weight">Вес (кг):*</label>
+                  <input class="cat-info__input" id="weight" type="text" name="weight" placeholder="7">
+                </p>
+                <p class="cat-info__paragraf">
+                  <label class="cat-info__label" for="age">Возраст (лет):</label>
+                  <input class="cat-info__input" id="age" type="text" name="age" placeholder="7">
+                </p>
+              </fieldset>
+              <fieldset class="program-selection__box cat-goal">
+                <ul class="cat-goal__list">
+                  <li class="cat-goal__item">
+                    <input class="visually-hidden cat-goal__input" type="radio" name="purpose" value="slim" id="slim" checked>
+                    <label class="cat-goal__label" for="slim">Похудение</label>
+                  </li>
+                  <li class="cat-goal__item">
+                    <input class="visually-hidden cat-goal__input" type="radio" name="purpose" value="pro" id="pro">
+                    <label class="cat-goal__label" for="pro">Набор массы</label>
+                  </li>
+                  <li class="cat-goal__item">
+                    <input class="visually-hidden cat-goal__input" type="radio" name="purpose" value="dont-know" id="dont-know">
+                    <label class="cat-goal__label" for="dont-know">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <fieldset class="program-selection__box cat-contacts">
               <h2 class="cat-contacts__title">Контактные данные (владельца кота)</h2>
               <p>
@@ -128,7 +132,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="program-selection__button">Отправить заявку</button>
+            <button class="program-selection__button button">Отправить заявку</button>
             <p class="program-selection__note">* — Обязательные поля</p>
           </form>
         </div>

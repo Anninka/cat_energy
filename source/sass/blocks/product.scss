@@ -11,9 +11,9 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     justify-content: end;
-    height: 430px;
-    padding: 50px 38px 40px;
-    background-color: $grey-5;
+    height: 511px;
+    padding: 0 38px 40px;
+    background: linear-gradient(to bottom, $opacity 0%, $opacity 16%, $grey-5 16%, $grey-5 100%);
   }
 }
 
@@ -22,7 +22,6 @@
   width: 50%;
 
   @media (min-width: $tablet-width) {
-    align-self: center;
     width: 100%;
     margin-bottom: 34px;
   }
@@ -38,10 +37,6 @@
   height: fit-content;
   margin: 0 auto;
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -136px;
-  }
 }
 
 .product__image {
@@ -161,7 +156,9 @@
 
   @media (min-width: $tablet-width) {
     justify-content: end;
-    background-color: $white;
+    height: 430px;
+    margin-top: 82px;
+    background: $white;
     border: 2px solid $grey-5;
   }
 }
