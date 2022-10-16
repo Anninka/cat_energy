@@ -95,21 +95,29 @@
               </fieldset>
             </div>
             <fieldset class="program-selection__box cat-contacts">
-              <h2 class="cat-contacts__title">Контактные данные (владельца кота)</h2>
-              <p>
-                <label class="cat-contacts_label" for="email">e-mail:*</label>
-                <input class="cat-contacts__input" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
-              </p>
-              <p>
-                <label class="cat-contacts_label" for="phone">Телефон:*</label>
-                <input class="cat-contacts__input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
-              </p>
+              <h2 class="cat-contacts__title"><span class="cat-contacts__title-container">Контактные данные (владельца&nbsp;кота)</span></h2>
+              <div class="cat-contacts__wrapper">
+                <div class="cat-contacts__paragraph">
+                  <label class="cat-contacts__label" for="email">e-mail:*</label>
+                  <input class="cat-contacts__input" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
+                  <svg class="cat-contacts__icon-email">
+                    <use xlink:href="#icon-email"></use>
+                  </svg>
+                </div>
+                <div class="cat-contacts__paragraph">
+                  <label class="cat-contacts__label" for="phone">Телефон:*</label>
+                  <input class="cat-contacts__input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+                  <svg class="cat-contacts__icon-phone">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="program-selection__box cat-comment">
-              <h2 class="cat-comment__title">Комментарий</h2>
-              <p>
-                <textarea class="cat-comment__area" id="text" name="comment" rows="5" cols="83" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </p>
+              <h2 class="cat-comment__title"><span class="cat-comment__title-container">Комментарий</span></h2>
+              <div class="cat-comment__area-wrapper">
+                <textarea class="cat-comment__area" id="text" name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
             </fieldset>
             <fieldset class="program-selection__box additional-to-nutrition">
               <h2 class="additional-to-nutrition__title">Дополнительно</h2>

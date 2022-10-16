@@ -28,15 +28,10 @@
   }
 
   &::before {
-    position: absolute;
+    @include design-strip();
     top: 15px;
     left: 0;
     right: -20px;
-    z-index: -1;
-
-    height: 2px;
-    background-color: $green;
-    content: "";
   }
 
   @media (max-width: $mobile-width-only) {
