@@ -1,17 +1,63 @@
 
+.cat-comment {
+  margin: 0;
+  padding: 0;
+}
+
 .cat-comment__title {
+  position: relative;
+  margin: 0;
+  padding: 10px 20px 18px;
   font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   color: $black;
+
+  .cat-comment__title-container {
+    display: inline-block;
+    padding-right: 22px;
+    background-color: $white;
+  }
+
+  &::before {
+    @include design-strip();
+    top: 25px;
+    left: 20px;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.cat-comment__area-wrapper {
+  padding: 20px 20px 10px;
 }
 
 .cat-comment__area {
+  width: 100%;
+  height: 150px;
+  padding: 9px 12px 9px 15px;
+  resize: none;
+
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: $grey-73;
+
+  border: none;
+  outline: 1px solid $grey-9;
+
+  &::placeholder {
+    color: $grey-73
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

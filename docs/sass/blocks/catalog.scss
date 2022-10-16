@@ -30,13 +30,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 140px 60px;
-    padding: 100px 30px 48px;
+    gap: 60px;
+    padding: 30px 30px 48px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-    gap: 144px 80px;
+    gap: 62px 80px;
     padding: 112px 110px 66px;
   }
 }

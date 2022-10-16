@@ -9,6 +9,7 @@ $white: #ffffff;
 $white-opacity: rgba(255, 255, 255, 0.3);
 $grey-5: #f2f2f2;
 $grey-8: #eaeaea;
+$grey-9: #e7e7e7;
 $grey-10: #e6e6e6;
 $grey-14: #dcdcdc;
 $grey-15: #d9d9d9;
@@ -19,6 +20,7 @@ $grey-73: #444444;
 $grey-opacity: rgba(68, 68, 68, 0.3);
 $grey-87: #222222;
 $grey-93: #111111;
+$opacity: rgba(0, 0, 0, 0);
 
 // Viewports
 
@@ -39,4 +41,12 @@ $mobile-width-only: 767px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 60%;
+}
+
+@mixin design-strip () {
+  position: absolute;
+  z-index: -1;
+  height: 2px;
+  background-color: $green;
+  content: "";
 }
