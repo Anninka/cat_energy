@@ -1,13 +1,21 @@
 
 .cat-contacts {
   margin: 0;
-  padding: 0;
+  padding: 26px 20px 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 67px 35px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 110px 39px;
+  }
 }
 
 .cat-contacts__title {
   position: relative;
   margin: 0;
-  padding: 26px 20px 15px;
+  margin-bottom: 35px;
 
   font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
@@ -17,25 +25,52 @@
 
   .cat-contacts__title-container {
     display: inline-block;
+    width: min-content;
+    padding-right: 15px;
     background-color: $white;
   }
 
   &::before {
     @include design-strip();
-    top: 42px;
-    left: 20px;
-    right: 0;
+    top: 16px;
+    left: 0;
+    right: -20px;
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 112px;
     font-size: 36px;
     line-height: 36px;
+
+    .cat-contacts__title-container {
+      position: absolute;
+      left: -40px;
+      width: auto;
+      padding-inline: 39px 42px;
+    }
+
+    &::before {
+      top: 22px;
+      left: -70px;
+      right: -65px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &::before {
+      left: -110px;
+      right: -110px;
+    }
   }
 }
 
-
 .cat-contacts__wrapper {
-  padding: 20px 20px 13px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 78px;
+  }
 }
 
 .cat-contacts__paragraph {
@@ -46,6 +81,15 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin: 0;
   }
 }
 
@@ -67,18 +111,31 @@
 .cat-contacts__label {
   margin-right: 12px;
   white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
 }
 
 .cat-contacts__input {
   width: 100%;
   height: 45px;
   padding: 0;
+  padding-left: 15px;
+  color: $grey-73;
   border: none;
   outline: 1px solid $grey-20;
 
   &::placeholder {
-    padding-left: 15px;
     color: $grey-73;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 18px;
   }
 }
 
@@ -88,11 +145,19 @@
   width: 18px;
   height: 13px;
   stroke: $grey-87;
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
+  }
 }
 
 .cat-contacts__icon-phone {
   position: absolute;
+  right: 13px;
   width: 20px;
   height: 20px;
-  right: 13px;
+
+  @media (min-width: $tablet-width) {
+    right: 16px;
+  }
 }

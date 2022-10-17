@@ -19,11 +19,17 @@
       <symbol id="icon-academy" viewBox="0 0 27 34">
         <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"></path>
       </symbol>
+      <symbol id="icon-email" viewBox="0 0 20 15">
+        <path stroke-width="1.3" fill="none" d="M.65 6v8M17.65 6v8M0 13.35h18M0 1.35h18M17.35 3.182L9 9.677.65 3.182V1.65h16.7v1.532z"></path>
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 20 21">
+        <g><path d="M17.9 9.7528H9.4v1.2041h8.5l-2.1 2.1072.9.9031 3.1-3.1107a.7539.7539 0 00.15-.4515.754.754 0 00-.15-.4516l-3.1-3.1106-.9.903 2.1 2.007zM8.1 19.7872v-6.2213a.6533.6533 0 00-.1886-.4129.649.649 0 00-.4114-.1892H3.1c.0052.3177.1332.621.3572.8457s.5262.3532.8428.3584h2.5v5.0172H3.1a1.7835 1.7835 0 01-.6982-.0955 1.7882 1.7882 0 01-.6074-.3585 1.7967 1.7967 0 01-.4224-.5661 1.8011 1.8011 0 01-.172-.6857V3.4311a1.7795 1.7795 0 01.483-1.251A1.7674 1.7674 0 012.9 1.625h3.9v5.0172H4.4a1.218 1.218 0 00-.8428.3584c-.224.2247-.352.528-.3572.8458h4.4a.649.649 0 00.4114-.1893.6532.6532 0 00.1886-.4128V.9225a.8632.8632 0 00-.2628-.403A.8586.8586 0 007.5.3204H3.1a2.9907 2.9907 0 00-1.1559.1902 2.9985 2.9985 0 00-.9952.62 3.01 3.01 0 00-.6827.955A3.019 3.019 0 000 3.2305v13.9478c-.029.3991.0247.7998.1575 1.177.1328.3772.342.7228.6144 1.0149.2724.2922.602.5246.9683.6828a2.8824 2.8824 0 001.1598.236h4.6a.499.499 0 00.555-.2834.503.503 0 00.045-.2183z"/></g><defs><clipPath id="clip0_153_253"><path transform="translate(0 .3204)" d="M0 0h20v20.0688H0z"/></clipPath></defs>
+      </symbol>
     </svg>
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
-          <a class="main-nav__logo">
+          <a class="main-nav__logo" href="index.html">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -95,7 +101,7 @@
               </fieldset>
             </div>
             <fieldset class="program-selection__box cat-contacts">
-              <h2 class="cat-contacts__title"><span class="cat-contacts__title-container">Контактные данные (владельца&nbsp;кота)</span></h2>
+              <h2 class="cat-contacts__title"><span class="cat-contacts__title-container">Контактные&nbsp;данные (владельца&nbsp;кота)</span></h2>
               <div class="cat-contacts__wrapper">
                 <div class="cat-contacts__paragraph">
                   <label class="cat-contacts__label" for="email">e-mail:*</label>
@@ -106,7 +112,7 @@
                 </div>
                 <div class="cat-contacts__paragraph">
                   <label class="cat-contacts__label" for="phone">Телефон:*</label>
-                  <input class="cat-contacts__input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+                  <input class="cat-contacts__input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90" pattern="^[0-9]+$">
                   <svg class="cat-contacts__icon-phone">
                     <use xlink:href="#icon-phone"></use>
                   </svg>
@@ -120,35 +126,37 @@
               </div>
             </fieldset>
             <fieldset class="program-selection__box additional-to-nutrition">
-              <h2 class="additional-to-nutrition__title">Дополнительно</h2>
+              <h2 class="additional-to-nutrition__title"><span class="additional-to-nutrition__title-container">Дополнительно</span></h2>
               <ul class="additional-to-nutrition__list">
                 <li class="additional-to-nutrition__item">
-                  <input class="visually-hidden" type="checkbox" name="other" id="" cheked>
-                  <label class="additional-to-nutrition__label" for="">Сахарозаменитель</label>
+                  <input class="visually-hidden additional-to-nutrition__input" type="checkbox" name="other" id="sweetener" checked>
+                  <label class="additional-to-nutrition__label" for="sweetener">Сахарозаменитель</label>
                 </li>
                 <li class="additional-to-nutrition__item">
-                  <input class="visually-hidden" type="checkbox" name="other" id="" cheked>
-                  <label class="additional-to-nutrition__label" for="">Питьевая вода</label>
+                  <input class="visually-hidden additional-to-nutrition__input" type="checkbox" name="other" id="water">
+                  <label class="additional-to-nutrition__label" for="water">Питьевая вода</label>
                 </li>
                 <li class="additional-to-nutrition__item">
-                  <input class="visually-hidden" type="checkbox" name="other" id="" cheked>
-                  <label class="additional-to-nutrition__label" for="">Молоко</label>
+                  <input class="visually-hidden additional-to-nutrition__input" type="checkbox" name="other" id="milk">
+                  <label class="additional-to-nutrition__label" for="milk">Молоко</label>
                 </li>
                 <li class="additional-to-nutrition__item">
-                  <input class="visually-hidden" type="checkbox" name="other" id="" cheked>
-                  <label class="additional-to-nutrition__label" for="">Витамины</label>
+                  <input class="visually-hidden additional-to-nutrition__input" type="checkbox" name="other" id="vitamins">
+                  <label class="additional-to-nutrition__label" for="vitamins">Витамины</label>
                 </li>
               </ul>
             </fieldset>
-            <button class="program-selection__button button">Отправить заявку</button>
-            <p class="program-selection__note">* — Обязательные поля</p>
+            <div class="program-selection__button-wrapper">
+              <button class="program-selection__button button">Отправить заявку</button>
+              <p class="program-selection__note">* — Обязательные поля</p>
+            </div>
           </form>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
+        <div class="page-footer__contacts page-footer__contacts--form contacts">
           <div class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</div>
           <div class="contacts__wrapper">
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>

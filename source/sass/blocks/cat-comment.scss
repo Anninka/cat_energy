@@ -2,6 +2,14 @@
 .cat-comment {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 67px 35px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 110px 37px;
+  }
 }
 
 .cat-comment__title {
@@ -28,13 +36,43 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 112px;
+    padding: 0;
     font-size: 36px;
     line-height: 36px;
+
+    .cat-comment__title-container {
+      position: absolute;
+      left: -40px;
+      padding-inline: 39px 38px;
+    }
+
+    &::before {
+      top: 22px;
+      left: -70px;
+      right: -67px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    .cat-comment__title-container {
+      padding-inline: 40px;
+    }
+
+    &::before {
+      left: -110px;
+      right: -110px;
+    }
   }
 }
 
 .cat-comment__area-wrapper {
   padding: 20px 20px 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .cat-comment__area {
@@ -57,6 +95,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: 174px;
+    padding: 10px 19px;
+
     font-size: 20px;
     line-height: 30px;
   }
