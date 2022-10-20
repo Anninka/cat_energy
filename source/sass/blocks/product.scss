@@ -141,14 +141,14 @@
     width: 30px;
     height: 30px;
     margin-bottom: 23px;
-    background-image: url(../../img/plus-small.svg);
+    background-image: url(../img/plus-small.svg);
     content: "";
 
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
       margin: 0 auto 49px;
-      background-image: url(../../img/plus-big.svg);
+      background-image: url(../img/plus-big.svg);
     }
   }
 

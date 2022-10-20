@@ -200,22 +200,22 @@
   height: 289px;
   padding: 58px 0 43px;
 
-  background: url(../../img/gift-mobile.jpg);
+  background: url(../img/gift-mobile.jpg);
   @include background ();
 
   @media (min-resolution: 2dppx) {
-    background: url(../../img/gift-mobile@2x.jpg);
+    background: url(../img/gift-mobile@2x.jpg);
     @include background ();
   }
 
   @media (min-width: $tablet-width) {
     height: 200px;
     padding: 57px 124px 69px 77px;
-    background: url(../../img/gift-tablet.jpg);
+    background: url(../img/gift-tablet.jpg);
     @include background ();
 
     @media (min-resolution: 2dppx) {
-      background: url(../../img/gift-tablet@2x.jpg);
+      background: url(../img/gift-tablet@2x.jpg);
       @include background ();
     }
   }
@@ -224,11 +224,11 @@
     width: 245px;
     height: 289px;
     padding: 56px 42px 42px;
-    background: url(../../img/gift-desktop.jpg);
+    background: url(../img/gift-desktop.jpg);
     @include background ();
 
     @media (min-resolution: 2dppx) {
-      background: url(../../img/gift-desktop@2x.jpg);
+      background: url(../img/gift-desktop@2x.jpg);
       @include background ();
     }
   }
@@ -254,7 +254,7 @@
     height: 80px;
     margin: 0 auto 48px;
 
-    background: url(../../img/icon_gift.svg);
+    background: url(../img/icon_gift.svg);
     content: "";
   }
 
