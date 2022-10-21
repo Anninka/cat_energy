@@ -8,8 +8,10 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
+const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+const del = require("del");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -55,24 +57,24 @@ exports.scripts = scripts;
 
 // Images
 
-// const optimizeImages = () => {
-//   return gulp.src("source/img/**/*.{png,jpg,svg}")
-//     .pipe(imagemin([
-//       imagemin.mozjpeg({progressive: true}),
-//       imagemin.optipng({optimizationLevel: 3}),
-//       imagemin.svgo()
-//     ]))
-//     .pipe(gulp.dest("build/img"))
-// }
+const optimizeImages = () => {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"))
+}
 
-// exports.optimizeImages = optimizeImages;
+exports.optimizeImages = optimizeImages;
 
-// const copyImages = () => {
-//   return gulp.src("source/img/**/*.{png,jpg,svg}")
-//     .pipe(gulp.dest("build/img"))
-// }
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(gulp.dest("build/img"))
+}
 
-// exports.copyImages = copyImages;
+exports.copyImages = copyImages;
 
 // WebP
 
@@ -116,9 +118,9 @@ exports.copy = copy;
 
 // Clean
 
-// const clean = () => {
-//   return del("build");
-// };
+const clean = () => {
+  return del("build");
+};
 
 // Server
 
@@ -136,6 +138,13 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
@@ -147,11 +156,14 @@ const watcher = () => {
 // Build
 
 const build = gulp.series(
+  clean,
   copy,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
     scripts,
+    // sprite,
     createWebp
   ),
 );
@@ -160,13 +172,15 @@ exports.build = build;
 
 // Default
 
-
 exports.default = gulp.series(
+  clean,
   copy,
+  copyImages,
   gulp.parallel(
     styles,
     html,
     scripts,
+    // sprite,
     createWebp
   ),
   gulp.series(
