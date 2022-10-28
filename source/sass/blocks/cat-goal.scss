@@ -96,3 +96,16 @@
     }
   }
 }
+
+.cat-goal__input:hover + .cat-goal__label::before {
+  border-color: $grey-27;
+}
+
+
+.cat-goal__input:focus + .cat-goal__label::before {
+  border-color: $grey-27;
+}
+
+.cat-goal__input:disabled + .cat-goal__label {
+  opacity: 0.5;
+}

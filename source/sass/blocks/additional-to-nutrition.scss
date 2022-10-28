@@ -160,3 +160,8 @@
     left: -48px;
   }
 }
+
+.additional-to-nutrition__input:hover + .additional-to-nutrition__label::before,
+.additional-to-nutrition__input:focus + .additional-to-nutrition__label::before {
+  border-color: $grey-27;
+}

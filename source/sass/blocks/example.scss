@@ -1,17 +1,24 @@
 
+.example {
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient($white 0%, $white 30%, $grey-8 30%, $grey-8 100%);
+  }
+}
+
 .example__wrapper {
   padding: 27px 20px 31px;
   background-color: $grey-8;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 30px 33px;
-    background: linear-gradient($white 0%, $white 56%, $grey-8 56%, $grey-8 100%);
+    padding: 43px 30px 0;
+    background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 110px 70px;
+    padding: 0 45px 70px 110px;
     background: linear-gradient($white 0%, $white 30%, $grey-8 30%, $grey-8 100%);
   }
 }
@@ -69,11 +76,11 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
-    margin-bottom: 64px;
+    margin-bottom: 84px;
   }
 
   @media (min-width: $desktop-width) {
@@ -190,18 +197,141 @@
   }
 }
 
-.example__image {
-  margin-bottom: 27px;
+.example__img-wrapper {
+  background-color: $grey-8;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    width: 708px;
-    height: 620px;
-    margin: 0 auto 33px;
+    height: 636px;
+    background: linear-gradient($white 0%, $white 27%, $grey-8 27%, $grey-8 100%);
   }
 
   @media (min-width: $desktop-width) {
-    width: 690px;
-    height: 536px;
+    align-self: center;
+    height: 635px;
+    margin-right: 110px;
+    background: none;
+  }
+}
+
+.example__images {
+  position: relative;
+  width: 311px;
+  height: 232px;
+  margin: 0 auto 60px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    width: 677px;
+    height: 520px;
+    margin: 0 auto 113px;
+  }
+}
+
+.example__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.example__image--skinnycat {
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/skinnycat-tabl-desk.png), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../img/skinnycat-tabl-desk@2x.png), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url(../img/skinnycat-tabl-desk.png), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../img/skinnycat-tabl-desk@2x.png), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
+      background-size: cover;
+    }
+  }
+}
+
+.example__image--fat-cat {
+  background: url(../img/fatcat-mobile.png);
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../img/fatcat-mobile@2x.png);
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    background: url(../img/fatcat-tabl-desk.png), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../img/fatcat-tabl-desk@2x.png), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    background: url(../img/fatcat-tabl-desk.png), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../img/fatcat-tabl-desk@2x.png), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
+      background-size: cover;
+    }
+  }
+}
+
+.range-controls {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    bottom: -28px;
+    left: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -50px;
+    left: 110px;
+  }
+}
+
+.range-controls__input {
+
+  @media (min-width: $tablet-width) {
+    appearance: none;
+    width: 428px;
+    height: 6px;
+
+    background-color: $grey-14;
+    border-radius: 6px;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 8px;
+      height: 8px;
+      box-sizing: content-box;
+      background-color: $green;
+      border: 12px solid $white;
+      border-radius: 50%;
+      outline: 1px solid $grey-14;
+      box-shadow: 0px 1px 3px $shadow;
+    }
+  }
+}
+
+.example__mobile-button {
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Cat-Energy</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -66,6 +67,10 @@
           <h1 class="promo__title">Функциональное <br> питание для котов</h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-pot-desktop.webp 1x, img/index-pot-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-pot-tablet.webp 1x, img/index-pot-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-pot-mobile.webp 1x, img/index-pot-mobile@2x.webp 2x">
+
             <source media="(min-width: 1440px)" srcset="img/index-pot-desktop.png 1x, img/index-pot-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-pot-tablet.png 1x, img/index-pot-tablet@2x.png 2x">
             <img class="promo__image" src="img/index-pot-mobile.png" srcset="img/index-pot-mobile@2x.png 2x" width="280" height="270" alt="Банка функционального питания оранжевого цвета со вкусом курицы">
@@ -134,13 +139,19 @@
               </div>
             </dl>
           </div>
-          <div class="example__img-wrapper">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/fatcat-tabl-desk.png 1x, img/fatcat-tabl-desk@2x.png 2x">
-              <img class="example__image example__image--fat-cat" src="img/fatcat-mobile.png" srcset="img/fatcat-mobile@2x.png" width="311" height="232" alt="Толстый кот до начала приема спец питания">
-            </picture>
-            <button class="example__button example__button--before">Было</button>
-            <button class="example__button example__button--after">Стало</button>
+        </div>
+        <div class="example__img-wrapper">
+          <div class="example__images">
+            <div class="example__image example__image--skinnycat">
+            </div>
+            <div class="example__image example__image--fat-cat">
+            </div>
+            <div class="example__range range-controls">
+              <input class="range-controls__input" type="range" min="0" max="100" step="1" value="50">
+            </div>
+          </div>
+          <div class="example__mobile-button">
+            <p>Было Стало</p>
           </div>
         </div>
       </section>
