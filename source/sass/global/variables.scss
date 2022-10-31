@@ -2,6 +2,7 @@
 // Colors
 
 $black: #000000;
+$black-opacity: rgba(0, 0, 0, 0.24);
 $shadow: rgba(0, 0, 0, 0.16);
 $shadow-hover: rgba(0, 0, 0, 0.19);
 $shadow-active: rgba(0, 0, 0, 0.2);
@@ -31,26 +32,3 @@ $opacity: rgba(0, 0, 0, 0);
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
-
-//Mixins
-
-@mixin list () {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-@mixin background () {
-  background-color: $green;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: 60%;
-}
-
-@mixin design-strip () {
-  position: absolute;
-  z-index: -1;
-  height: 2px;
-  background-color: $green;
-  content: "";
-}

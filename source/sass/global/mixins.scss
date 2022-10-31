@@ -1,0 +1,21 @@
+
+@mixin list () {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin background () {
+  background-color: $green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 60%;
+}
+
+@mixin design-strip () {
+  position: absolute;
+  z-index: -1;
+  height: 2px;
+  background-color: $green;
+  content: "";
+}

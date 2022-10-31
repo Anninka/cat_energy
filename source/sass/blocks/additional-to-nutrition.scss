@@ -165,3 +165,7 @@
 .additional-to-nutrition__input:focus + .additional-to-nutrition__label::before {
   border-color: $grey-27;
 }
+
+.additional-to-nutrition__input:disabled + .additional-to-nutrition__label {
+  opacity: 0.3;
+}

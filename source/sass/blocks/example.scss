@@ -163,6 +163,7 @@
 }
 
 .example__spent {
+  display: flex;
   padding-top: 34px;
   font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
@@ -173,7 +174,6 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: column;
     align-items: flex-end;
     align-self: center;
@@ -192,13 +192,22 @@
 }
 
 .example__spent-text {
+
   @media (min-width: $desktop-width) {
     margin-right: 63px;
   }
 }
 
+.example__spent-value {
+  margin: 0;
+}
+
 .example__img-wrapper {
   background-color: $grey-8;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 39px;
+  }
 
   @media (min-width: $tablet-width) {
     height: 636px;
@@ -217,7 +226,7 @@
   position: relative;
   width: 311px;
   height: 232px;
-  margin: 0 auto 60px;
+  margin: 0 auto 35px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -234,9 +243,18 @@
   height: 100%;
 }
 
-.example__image--skinnycat {
+.example__image--skinny-cat {
+  display: none;
+  background: url(../img/skinnycat-mobile.png);
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../img/skinnycat-mobile@2x.png);
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
+    display: block;
     background-image: url(../img/skinnycat-tabl-desk.png), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
     background-size: cover;
 
@@ -267,6 +285,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: block;
     width: 50%;
     background: url(../img/fatcat-tabl-desk.png), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
     background-size: cover;
@@ -289,49 +308,63 @@
   }
 }
 
-.range-controls {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
-    bottom: -28px;
-    left: 122px;
-  }
-
-  @media (min-width: $desktop-width) {
-    bottom: -50px;
-    left: 110px;
-  }
-}
-
-.range-controls__input {
-
-  @media (min-width: $tablet-width) {
-    appearance: none;
-    width: 428px;
-    height: 6px;
-
-    background-color: $grey-14;
-    border-radius: 6px;
-
-    &::-webkit-slider-thumb {
-      appearance: none;
-      width: 8px;
-      height: 8px;
-      box-sizing: content-box;
-      background-color: $green;
-      border: 12px solid $white;
-      border-radius: 50%;
-      outline: 1px solid $grey-14;
-      box-shadow: 0px 1px 3px $shadow;
-    }
-  }
-}
-
-.example__mobile-button {
+.example__mobile-button-wrapper {
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.example__mobile-button {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: $white;
+  border: 1px solid $grey-20;
+  border-radius: 6px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: -4px;
+    font-family: Oswald, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $black;
+  }
+
+  &::before {
+    content: "было";
+    left: -50px;
+  }
+
+  &::after {
+    content: "стало";
+    right: -50px;
+  }
+}
+
+.example__mobile-button--before,
+.example__mobile-button--after {
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  width: 35px;
+  height: 6px;
+  background: $green;
+  border: none;
+  border-radius: 6px;
+}
+
+.example__mobile-button--after {
+  left: 5px;
+}
+
+.example__mobile-button--before {
+  display: none;
+  right: 5px;
 }

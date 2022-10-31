@@ -1,6 +1,7 @@
 // Global
 
 @import "global/variables.scss",
+"global/mixins.scss",
 "global/global.scss",
 "global/fonts.scss";
 
@@ -23,4 +24,5 @@
 "blocks/cat-comment.scss",
 "blocks/additional-to-nutrition.scss",
 "blocks/social.scss",
+"blocks/range-controls.scss",
 "blocks/contacts.scss";
