@@ -15,14 +15,14 @@ navToggle.addEventListener('click', function() {
 });
 
 // слайдер планшетный и десктопный
-
-const fatCat = document.querySelector('.example__image--fat-cat');
-const skinnyCat = document.querySelector('.example__image--skinny-cat');
-const separator = document.querySelector('.range-controls__input');
-const imageContainer = document.querySelector('.example__images');
-let flag = false;
-
 if(document.querySelector('.example__image--fat-cat')) {
+
+  const fatCat = document.querySelector('.example__image--fat-cat');
+  const skinnyCat = document.querySelector('.example__image--skinny-cat');
+  const separator = document.querySelector('.range-controls__input');
+  const imageContainer = document.querySelector('.example__images');
+  let flag = false;
+
 
   separator.addEventListener('click', function(evt) {
     evt.preventDefault();
