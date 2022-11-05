@@ -22,40 +22,45 @@ const separator = document.querySelector('.range-controls__input');
 const imageContainer = document.querySelector('.example__images');
 let flag = false;
 
-separator.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  flag = true;
-}, false);
+if(document.querySelector('.example__image--fat-cat')) {
 
-document.addEventListener('mouseup', function() {
-  flag = false;
-}, false);
+  separator.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    flag = true;
+  }, false);
 
-imageContainer.addEventListener('mousemove', function(evt) {
-  let res = evt.pageX - this.offsetLeft;
-  if (flag && (res > 0) && (res < skinnyCat.offsetWidth)) {
-    separator.style.left = separator.value + '%';
-    fatCat.style.width = separator.value + '%';
-  }
-}, false);
+  document.addEventListener('mouseup', function() {
+    flag = false;
+  }, false);
 
-//Кнопки переключения изображений
+  imageContainer.addEventListener('mousemove', function(evt) {
+    let res = evt.pageX - this.offsetLeft;
+    if (flag && (res > 0) && (res < skinnyCat.offsetWidth)) {
+      separator.style.left = separator.value + '%';
+      fatCat.style.width = separator.value + '%';
+    }
+  }, false);
 
-const skinnyCatImage = document.querySelector('.example__image--skinny-cat');
-const fatCatImage = document.querySelector('.example__image--fat-cat');
-const buttonAfter = document.querySelector('.example__mobile-button--after');
-const buttonBefore = document.querySelector('.example__mobile-button--before');
+  //Кнопки переключения изображений
 
-buttonAfter.addEventListener('click', function () {
-  skinnyCatImage.style.display = "block";
-  fatCatImage.style.display = "none";
-  buttonBefore.style.display = "block";
-  buttonAfter.style.display = "none";
-})
+  const skinnyCatImage = document.querySelector('.example__image--skinny-cat');
+  const fatCatImage = document.querySelector('.example__image--fat-cat');
+  const buttonAfter = document.querySelector('.example__mobile-button--after');
+  const buttonBefore = document.querySelector('.example__mobile-button--before');
+  const button = document.querySelector('.example__mobile-button');
 
-buttonBefore.addEventListener('click', function () {
-  skinnyCatImage.style.display = "none";
-  fatCatImage.style.display = "block";
-  buttonAfter.style.display = "block";
-  buttonBefore.style.display = "none";
-})
+  buttonAfter.addEventListener('click', function () {
+    skinnyCatImage.style.display = "block";
+    fatCatImage.style.display = "none";
+    buttonBefore.style.display = "block";
+    buttonAfter.style.display = "none";
+  })
+
+  buttonBefore.addEventListener('click', function () {
+    skinnyCatImage.style.display = "none";
+    fatCatImage.style.display = "block";
+    buttonAfter.style.display = "block";
+    buttonBefore.style.display = "none";
+  })
+
+}

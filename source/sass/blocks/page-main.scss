@@ -1,0 +1,15 @@
+
+.page-main__error-page {
+  display: flex;
+  flex-direction: column;
+  margin-block: 100px;
+}
+
+.page-main__error-title,
+.page-main__error-text {
+  margin: 0 auto;
+}
+
+.page-main__error-title {
+  margin-bottom: 50px;
+}

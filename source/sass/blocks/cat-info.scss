@@ -59,6 +59,7 @@
   color: $grey-73;
 
   border: none;
+
   outline: 1px solid $grey-9;
 
   &::placeholder {
@@ -66,11 +67,17 @@
   }
 
   &:hover {
-    outline-color: $grey-20;
+    outline: 1px solid $grey-20;
   }
 
+  &:active,
   &:focus {
     outline: 2px solid $grey-73;
+  }
+
+
+  &:focus:invalid {
+    outline: 2px solid $red;
   }
 
   @media (min-width: $tablet-width) {

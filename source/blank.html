@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML Academy: Cat-Energy</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__container">
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__logo-cat main-nav__logo-cat--not-index" src="img/logo-mobile.svg" width="33" height="38" alt="Назад на главную страницу магазина «Cat Energy»">
+            </picture>
+          </a>
+          <img class="main-nav__logo-cat-energy" src="img/logo_cat-energy.svg" width="101" height="18" alt="Магазин «Cat Energy»">
+          <button class="main-nav__toggle"></button>
+        </div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link--active" aria-current="page">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main page-main__error-page">
+      <h2 class="page-main__error-title">Ошибка 404</h2>
+      <p class="page-main__error-text">Страница не существует</p>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts page-footer__contacts--form contacts">
+          <div class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</div>
+          <div class="contacts__wrapper">
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__town">Санкт-Петербург</p>
+          </div>
+        </div>
+        <section class="page-footer__map">
+          <h2 class="visually-hidden">Наше местоположение на карте</h2>
+          <iframe class="page-footer__map-code" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d297.0938340176515!2d30.322586985836665!3d59.93876073523788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1664794226071!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <div class="page-footer__social social">
+          <a class="social__logo" href="index.html" aria-label="Главная страница сайта Cat-Energy">
+            <img src="img/footer-logo2.svg" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
+                <svg class="social__icon-vk">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы на Ютуб">
+                <svg class="social__icon-youtube">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Мы в Телеграм">
+                <svg class="social__icon-telegram">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="social__link-academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия адаптивная вёрстка">
+            <p class="social__link-academy-text">HTML Academy</p>
+            <svg class="social__icon-academy">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

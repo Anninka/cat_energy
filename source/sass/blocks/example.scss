@@ -245,64 +245,64 @@
 
 .example__image--skinny-cat {
   display: none;
-  background: url(../img/skinnycat-mobile.png);
+  background: url(../img/skinnycat-mobile.webp);
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url(../img/skinnycat-mobile@2x.png);
+    background: url(../img/skinnycat-mobile@2x.webp);
     background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
     display: block;
-    background-image: url(../img/skinnycat-tabl-desk.png), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
+    background-image: url(../img/skinnycat-tabl-desk.webp), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url(../img/skinnycat-tabl-desk@2x.png), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
+      background: url(../img/skinnycat-tabl-desk@2x.webp), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
       background-size: cover;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url(../img/skinnycat-tabl-desk.png), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
+    background-image: url(../img/skinnycat-tabl-desk.webp), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url(../img/skinnycat-tabl-desk@2x.png), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
+      background: url(../img/skinnycat-tabl-desk@2x.webp), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
       background-size: cover;
     }
   }
 }
 
 .example__image--fat-cat {
-  background: url(../img/fatcat-mobile.png);
+  background: url(../img/fatcat-mobile.webp);
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url(../img/fatcat-mobile@2x.png);
+    background: url(../img/fatcat-mobile@2x.webp);
     background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
     display: block;
     width: 50%;
-    background: url(../img/fatcat-tabl-desk.png), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
+    background: url(../img/fatcat-tabl-desk.webp), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url(../img/fatcat-tabl-desk@2x.png), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
+      background: url(../img/fatcat-tabl-desk@2x.webp), linear-gradient($white 0%, $white 33%, $grey-8 33%, $grey-8 100%);
       background-size: cover;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    background: url(../img/fatcat-tabl-desk.png), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
+    background: url(../img/fatcat-tabl-desk.webp), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: url(../img/fatcat-tabl-desk@2x.png), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
+      background: url(../img/fatcat-tabl-desk@2x.webp), linear-gradient($white 0%, $white 36%, $grey-8 36%, $grey-8 100%);
       background-size: cover;
     }
   }

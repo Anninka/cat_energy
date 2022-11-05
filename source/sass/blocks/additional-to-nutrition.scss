@@ -166,6 +166,10 @@
   border-color: $grey-27;
 }
 
+.additional-to-nutrition__input:focus-visible + .additional-to-nutrition__label::before {
+  border-color: $grey-73;
+}
+
 .additional-to-nutrition__input:disabled + .additional-to-nutrition__label {
   opacity: 0.3;
 }
