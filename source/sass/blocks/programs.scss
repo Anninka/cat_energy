@@ -1,5 +1,5 @@
 
-.programs__wrapper{
+.programs__wrapper {
   padding: 20px 20px 13px;
 
   @media (min-width: $tablet-width) {
@@ -13,11 +13,12 @@
 
 .programs__list {
   @include list ();
+
   padding: 0;
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
   }
 }
 
@@ -58,7 +59,7 @@
 }
 
 .programs__icon {
-  position: relative;;
+  position: relative;
   width: 50px;
   height: 50px;
   margin-right: 20px;
@@ -87,7 +88,7 @@
   left: 7px;
   width: 36px;
   height: 50px;
-  background-image: url(../img/icon-cat-slim.svg);
+  background-image: url("../img/icon-cat-slim.svg");
   content: "";
 
   @media (min-width: $tablet-width) {
@@ -113,7 +114,7 @@
   left: -10px;
   width: 67px;
   height: 28px;
-  background-image: url(../img/icon-cat-pro.svg);
+  background-image: url("../img/icon-cat-pro.svg");
   content: "";
 
   @media (min-width: $tablet-width) {
@@ -137,8 +138,7 @@
   margin: 0;
   margin-bottom: 29px;
   padding-top: 10px;
-
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -160,13 +160,11 @@
   margin: 0;
   margin-bottom: 15px;
   padding-bottom: 23px;
-
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $grey-73;
-
   border-bottom: 1px solid $grey-15;
 
   @media (min-width: $tablet-width) {
@@ -176,7 +174,6 @@
     font-size: 16px;
     line-height: 24px;
     color: $black;
-
     border: none;
   }
 
@@ -189,8 +186,7 @@
 .programs-link {
   display: flex;
   width: max-content;
-
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -208,7 +204,7 @@
   height: 12px;
   padding-bottom: 3px;
   margin-left: 15px;
-  content: url(../img/icon-arrow.svg);
+  content: url("../img/icon-arrow.svg");
 
   @media (min-width: $tablet-width) {
     margin-top: -3px;
@@ -217,7 +213,7 @@
 }
 
 .programs-link:hover::after {
-  content: url(../img/icon-arrow-long.svg);
+  content: url("../img/icon-arrow-long.svg");
 }
 
 .programs-link:active {

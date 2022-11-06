@@ -16,8 +16,7 @@
   position: relative;
   margin: 0;
   padding: 13px 20px 20px;
-
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -108,8 +107,7 @@
 .additional-to-nutrition__label {
   position: relative;
   user-select: none;
-
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -122,10 +120,8 @@
     position: absolute;
     width: 30px;
     height: 30px;
-
     top: -3px;
     left: -46px;
-
     border: 1px solid $grey-20;
     content: "";
   }
@@ -148,11 +144,9 @@
   position: absolute;
   top: 5px;
   left: -40px;
-
   width: 18px;
   height: 14px;
-
-  background: url(../img/icon-check.svg);
+  background: url("../img/icon-check.svg");
   content: "";
 
   @media (min-width: $tablet-width) {

@@ -16,7 +16,7 @@
   position: relative;
   margin: 0;
   padding: 10px 20px 18px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -55,7 +55,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     .cat-comment__title-container {
       padding-inline: 40px;
     }
@@ -81,7 +80,7 @@
   padding: 9px 12px 9px 15px;
   resize: none;
 
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -91,7 +90,7 @@
   outline: 1px solid $grey-9;
 
   &::placeholder {
-    color: $grey-73
+    color: $grey-73;
   }
 
   @media (min-width: $tablet-width) {

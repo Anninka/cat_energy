@@ -24,6 +24,7 @@
 
 .social__list {
   @include list ();
+
   display: flex;
   justify-content: center;
   margin: 0 20px;
@@ -106,7 +107,7 @@
   }
 }
 
-.social__link-academy{
+.social__link-academy {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -117,7 +118,6 @@
   }
 
   &:hover {
-
     .social__icon-academy {
       fill: $green;
     }
@@ -130,7 +130,7 @@
 
 .social__link-academy-text {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;

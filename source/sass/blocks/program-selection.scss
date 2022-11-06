@@ -18,8 +18,7 @@
 .program-selection__title {
   margin: 0;
   margin-bottom: 37px;
-
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -38,8 +37,7 @@
 
 .program-selection__text {
   margin: 0;
-
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -54,7 +52,6 @@
 }
 
 .program-selection__container {
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -85,7 +82,6 @@
   width: 100%;
   height: 40px;
   margin-bottom: 21px;
-
   font-size: 16px;
   line-height: 20px;
 
@@ -94,7 +90,6 @@
     height: 52px;
     margin: 0;
     margin-right: 61px;
-
     font-size: 20px;
     line-height: 0;
   }
@@ -107,7 +102,7 @@
 
 .program-selection__note {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;

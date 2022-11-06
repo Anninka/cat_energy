@@ -16,13 +16,11 @@
 }
 
 .range-controls__input {
-
   @media (min-width: $tablet-width) {
     position: absolute;
     appearance: none;
     width: 428px;
     height: 6px;
-
     background-color: $grey-14;
     border-radius: 6px;
 
@@ -36,14 +34,14 @@
       border: 12px solid $white;
       border-radius: 50%;
       outline: 1px solid $grey-14;
-      box-shadow: 0px 1px 3px $shadow;
+      box-shadow: 0 1px 3px $shadow;
 
       &:hover {
-        box-shadow: 0px 2px 4px $shadow-hover;
+        box-shadow: 0 2px 4px $shadow-hover;
       }
 
       &:active {
-        box-shadow: 0px 3px 5px $shadow-active;
+        box-shadow: 0 3px 5px $shadow-active;
       }
     }
 
@@ -57,14 +55,14 @@
       border: 12px solid $white;
       border-radius: 50%;
       outline: 1px solid $grey-14;
-      box-shadow: 0px 1px 3px $shadow;
+      box-shadow: 0 1px 3px $shadow;
 
       &:hover {
-        box-shadow: 0px 2px 4px $shadow-hover;
+        box-shadow: 0 2px 4px $shadow-hover;
       }
 
       &:active {
-        box-shadow: 0px 3px 5px $shadow-active;
+        box-shadow: 0 3px 5px $shadow-active;
       }
     }
 
@@ -73,14 +71,12 @@
       position: absolute;
       top: -13px;
       padding-bottom: 3px;
-
-      font-family: Oswald, Arial, sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-size: 20px;
       line-height: 30px;
       font-weight: 400;
       text-transform: uppercase;
       color: $black;
-
       border-bottom: 1px dotted $black-opacity;
     }
 

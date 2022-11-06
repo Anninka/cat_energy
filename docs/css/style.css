@@ -21,23 +21,23 @@ a {
   box-sizing: border-box; }
 
 @font-face {
-  font-family: Oswald;
-  src: url("../fonts/Oswald-Regular.woff2") format("woff2");
-  src: url("../fonts/Oswald-Regular.woff") format("woff");
+  font-family: "Oswald";
+  src: url("../fonts/"Oswald"-Regular.woff2") format("woff2");
+  src: url("../fonts/"Oswald"-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Oswald-Medium.woff2") format("woff2");
-  src: url("../fonts/Oswald-Medium.woff") format("woff");
+  src: url("../fonts/"Oswald"-Medium.woff2") format("woff2");
+  src: url("../fonts/"Oswald"-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 .page {
   min-width: 300px;
   height: 100%;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px; }
 
@@ -50,7 +50,7 @@ a {
 
 .button {
   display: block;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
@@ -148,7 +148,7 @@ a {
     background-color: #ffffff; } }
 
 .main-nav__item {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -219,7 +219,7 @@ a {
 
 .promo {
   position: relative;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff; }
 
@@ -455,7 +455,7 @@ a {
   margin: 0;
   margin-bottom: 29px;
   padding-top: 10px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -474,7 +474,7 @@ a {
   margin: 0;
   margin-bottom: 15px;
   padding-bottom: 23px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -497,7 +497,7 @@ a {
 .programs-link {
   display: flex;
   width: 180px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -539,7 +539,7 @@ a {
 .advantages__title {
   margin: 0;
   margin-bottom: 38px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -598,7 +598,7 @@ a {
       position: absolute;
       right: 0;
       z-index: -1;
-      font-family: Oswald, Arial, sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;
       line-height: 280px;
       font-weight: 400;
@@ -620,7 +620,7 @@ a {
 
 .advantages__text {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -653,7 +653,7 @@ a {
 .example__title {
   margin: 0;
   margin-bottom: 33px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -671,7 +671,7 @@ a {
 .example__text {
   margin: 0;
   margin-bottom: 25px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -719,7 +719,7 @@ a {
 
 .example__number {
   padding-top: 28px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -736,7 +736,7 @@ a {
   width: 87px;
   padding: 8px 14px 0;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
@@ -756,7 +756,7 @@ a {
 
 .example__spent {
   padding-top: 34px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -887,7 +887,7 @@ a {
   width: 100px;
   margin: 0;
   margin-bottom: 14px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -909,7 +909,7 @@ a {
 .product__properties {
   width: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -973,7 +973,7 @@ a {
 .product__more-title {
   margin: 0;
   margin-bottom: 8px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -988,7 +988,7 @@ a {
 .product__more-text {
   margin: 0;
   margin-bottom: 21px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -1003,7 +1003,7 @@ a {
 .product__more-button {
   width: 100%;
   height: 40px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1032,7 +1032,7 @@ a {
   position: relative;
   margin: 0;
   padding-bottom: 36px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -1112,7 +1112,7 @@ a {
 .additional-products__item-title {
   margin: 0;
   margin-bottom: 13px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -1144,7 +1144,7 @@ a {
 .additional-products__item-price {
   margin: 0;
   margin-bottom: 15px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -1225,7 +1225,7 @@ a {
 .additional-products__gift-text-wrapper .additional-products__gift-text {
   width: 161px;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1265,7 +1265,7 @@ a {
 .catalog__title {
   margin: 0;
   padding: 27px 20px 41px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -1311,7 +1311,7 @@ a {
 .program-selection__title {
   margin: 0;
   margin-bottom: 37px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -1327,7 +1327,7 @@ a {
 
 .program-selection__text {
   margin: 0;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1381,7 +1381,7 @@ a {
 
 .program-selection__note {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -1418,7 +1418,7 @@ a {
 
 .cat-info__label,
 .cat-info__input {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1504,7 +1504,7 @@ a {
   position: relative;
   -moz-user-select: none;
        user-select: none;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1544,7 +1544,7 @@ a {
   position: relative;
   margin: 0;
   margin-bottom: 35px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -1606,7 +1606,7 @@ a {
 
 .cat-contacts__label,
 .cat-contacts__input {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1677,7 +1677,7 @@ a {
   position: relative;
   margin: 0;
   padding: 10px 20px 18px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -1727,7 +1727,7 @@ a {
   height: 150px;
   padding: 9px 12px 9px 15px;
   resize: none;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1759,7 +1759,7 @@ a {
   position: relative;
   margin: 0;
   padding: 13px 20px 20px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -1833,7 +1833,7 @@ a {
   position: relative;
   -moz-user-select: none;
        user-select: none;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1965,7 +1965,7 @@ a {
 
 .social__link-academy-text {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1986,7 +1986,7 @@ a {
 .contacts__offer {
   align-self: center;
   width: 140px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -2003,7 +2003,7 @@ a {
   align-self: center;
   width: 140px;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;

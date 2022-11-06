@@ -38,7 +38,6 @@
 }
 
 .product__image {
-
   @media (min-width: $tablet-width) {
     width: auto;
     max-height: 201px;
@@ -58,8 +57,7 @@
   width: 100px;
   margin: 0;
   margin-bottom: 14px;
-
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -86,8 +84,7 @@
 .product__properties {
   width: 100%;
   margin: 0;
-
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -100,7 +97,6 @@
 }
 
 .product__property {
-
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $grey-20;
   }
@@ -123,7 +119,6 @@
   width: 100%;
   height: 40px;
   margin-top: 22px;
-
   font-size: 16px;
   line-height: 20px;
 
@@ -141,14 +136,14 @@
     width: 30px;
     height: 30px;
     margin-bottom: 23px;
-    background-image: url(../img/plus-small.svg);
+    background-image: url("../img/plus-small.svg");
     content: "";
 
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
       margin: 0 auto 49px;
-      background-image: url(../img/plus-big.svg);
+      background-image: url("../img/plus-big.svg");
     }
   }
 
@@ -168,8 +163,7 @@
 .product__more-title {
   margin: 0;
   margin-bottom: 8px;
-
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -186,8 +180,7 @@
 .product__more-text {
   margin: 0;
   margin-bottom: 21px;
-
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -205,14 +198,12 @@
   cursor: pointer;
   width: 100%;
   height: 40px;
-
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: $grey-73;
-
   background-color: $grey-5;
   border: none;
 

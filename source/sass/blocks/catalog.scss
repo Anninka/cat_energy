@@ -3,7 +3,7 @@
   margin: 0;
   padding: 27px 20px 41px;
 
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -26,7 +26,6 @@
 }
 
 .catalog__basic-goods {
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
