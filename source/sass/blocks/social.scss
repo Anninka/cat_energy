@@ -22,6 +22,21 @@
   }
 }
 
+.social__logo-index {
+  display: block;
+  margin: 0 20px;
+  padding-top: 39px;
+  padding-bottom: 32px;
+  text-align: center;
+  border-bottom: 1px solid $grey-15;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
 .social__list {
   @include list ();
 
