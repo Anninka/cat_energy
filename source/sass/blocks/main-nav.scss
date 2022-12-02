@@ -74,7 +74,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    gap: 34px;
+    flex-wrap: wrap;
+    column-gap: 34px;
   }
 }
 
